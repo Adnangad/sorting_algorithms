@@ -4,8 +4,8 @@
 
 /**
  * selection_sort - sorts array using selection algorithm
- * @array:the array to be sorted
- * @size:the size of the array
+ * @array: the array to be sorted
+ * @size: the size of the array
  *
  * Return:None
  */
@@ -14,6 +14,8 @@ void selection_sort(int *array, size_t size)
 	size_t min, i, j;
 	int temp;
 
+	if (size < 2)
+		return;
 	for (i = 0; i < size - 1; i++)
 	{
 		min = i;
